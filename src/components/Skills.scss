@@ -1,0 +1,49 @@
+.skillsSection {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  padding: 0 50px;
+  box-sizing: border-box;
+
+  h1 {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    justify-content: space-around;
+
+    .updown {
+      margin-top: 50px;
+      border: 0.1px solid #eee;
+      width: 0.1px;
+      height: 70%;
+    }
+
+    .box {
+      width: 20%;
+      height: 100%;
+      // background-color: #eee;
+
+      img {
+        margin-top: 50px;
+        width: 40px;
+      }
+
+      h3 {
+        margin: 20px 0;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
