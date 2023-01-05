@@ -1,0 +1,124 @@
+.introSection {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f8f8fe;
+  padding: 50px 0;
+
+  h1 {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .introWrap {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    .introLeft {
+      width: 30%;
+      max-width: 400px;
+      height: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      // background-color: aquamarine;
+
+      .photo {
+        width: 40%;
+        min-width: 300px;
+        padding-top: 80px;
+      }
+
+      table {
+        font-size: 1rem;
+        margin-top: 20px;
+
+        tr {
+          height: 30px;
+
+          .td {
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    .introRight {
+      width: 55%;
+      margin-top: 40px;
+
+      .timeLineTitle {
+        display: inline-block;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .skills {
+        margin-bottom: 0;
+        line-height: 1.6rem;
+      }
+
+      p {
+        margin-bottom: 25px;
+        font-size: 0.85rem;
+        line-height: 1.4rem;
+
+        .bold {
+          font-weight: bold;
+        }
+        .normal {
+          font-weight: normal;
+          font-size: 0.85rem;
+        }
+
+        .contentsTitle {
+          display: inline-block;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #000;
+          font-size: 0.95rem;
+        }
+
+        .contents {
+          font-weight: normal;
+          margin-top: 10px;
+          display: inline-block;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .introSection {
+    .introWrap {
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      margin-top: 20px;
+      padding-left: 20px;
+
+      .introLeft {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .photo {
+          padding-top: 40px;
+        }
+      }
+
+      .introRight {
+        width: 100%;
+        margin-left: -20px;
+      }
+    }
+  }
+}
