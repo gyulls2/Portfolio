@@ -33,17 +33,16 @@ const Header = () => {
 
   return (
     <header className="header">
+      <div className="logo">
+        <Link to="main" spy={true} smooth={true}>
+          <img
+            src="https://gyulls2.github.io/Portfolio/images/favicon.svg"
+            alt="파일없음"
+          />
+        </Link>
+      </div>
       <nav className="nav">
         <ul className="menuList">
-          <li className="logo">
-            <Link to="main" spy={true} smooth={true}>
-              <img
-                src="https://gyulls2.github.io/Portfolio/images/favicon.svg"
-                alt="파일없음"
-              />
-            </Link>
-          </li>
-
           <li>
             <Link to="main" spy={true} smooth={true}>
               Home
@@ -88,8 +87,8 @@ const Header = () => {
             </button>
           </li>
         </ul>
-        <Progressbar />
       </nav>
+        <Progressbar />
       <button type="button" className="navBtn" onClick={toggleSide}>
         <GiHamburgerMenu />
       </button>

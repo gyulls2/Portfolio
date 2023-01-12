@@ -7,7 +7,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import { BiLink } from "react-icons/bi";
 
-const Project02 = () => {
+const Project02 = ({ showModal }) => {
   return (
     <section className="projectSection">
       <h1>PROJECT</h1>
@@ -18,18 +18,29 @@ const Project02 = () => {
           <img
             src="https://gyulls2.github.io/Portfolio/images/proj02.svg"
             alt="파일없음"
+            onClick={() =>
+              showModal("https://gyulls2.github.io/Portfolio/images/proj02.svg")
+            }
           />
           <p>
             2022/11/14 → 2022/11/23
             <br />
             개인 프로젝트
             <br /> <br />
-            <a href="https://gyulls2.github.io/" target="_blank">
+            <a
+              href="https://sesac-5cabd.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               배포 링크&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
             <br />
-            <a href="https://github.com/gyulls2/semi_project" target="_blank">
+            <a
+              href="https://github.com/gyulls2/semi_project_firebase"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Github&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
@@ -37,6 +48,7 @@ const Project02 = () => {
             <a
               href="https://velog.io/@tangerine/SeSAC-JavaScript-Semi-Project"
               target="_blank"
+              rel="noopener noreferrer"
             >
               velog 회고록&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
@@ -63,14 +75,19 @@ const Project02 = () => {
               <TimelineContent>
                 <span className="timeLineTitle">프로젝트 소개</span>
                 <p>
-                  카카오 도서 API를 활용한 책 검색 & 책갈피 생성 사이트입니다.
-                  책을 읽고 기억에 남는 문장으로 자신만의 감성이 담긴 책갈피를
-                  만들고, SNS로 공유하여 사용자의 독서 욕구를 자극하고 독서
-                  행동을 이끌어 내고자 하는 의도를 갖고 서비스를 기획하였습니다.
-                  사용자가 검색한 책에 코멘트를 입력하면, 책갈피를 생성해 화면에
-                  띄워주고 데이터를 JSON-server에 저장하는 기능을
-                  구현하였습니다. 기획부터 디자인, 반응형 사이트 제작, 기능
-                  구현까지 전담하여 업무를 수행하였습니다.
+                  <span className="blue">
+                    카카오 도서 API를 활용한 책 검색 & 책갈피 생성 사이트
+                  </span>
+                  입니다. 책을 읽고 기억에 남는 문장으로 자신만의 감성이 담긴
+                  책갈피를 만들고, SNS로 공유하여 사용자의 독서 욕구를 자극하고
+                  독서 행동을 이끌어 내고자 하는 의도를 갖고 서비스를
+                  기획하였습니다. 사용자가 검색한 책에 코멘트를 입력하면,
+                  책갈피를 생성해 화면에 띄워주고 데이터를 JSON-server에
+                  저장하는 기능을 구현하였습니다.{" "}
+                  <span className="blue">
+                    기획부터 디자인, 반응형 사이트 제작, 기능 구현까지 전담
+                  </span>
+                  하여 업무를 수행하였습니다.
                 </p>
               </TimelineContent>
             </TimelineItem>

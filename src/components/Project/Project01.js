@@ -7,7 +7,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import { BiLink } from "react-icons/bi";
 
-const Project01 = () => {
+const Project01 = ({ showModal }) => {
   return (
     <section className="projectSection">
       <h1>PROJECT</h1>
@@ -18,6 +18,9 @@ const Project01 = () => {
           <img
             src="https://gyulls2.github.io/Portfolio/images/proj01.svg"
             alt="파일없음"
+            onClick={() =>
+              showModal("https://gyulls2.github.io/Portfolio/images/proj01.svg")
+            }
           />
           <p>
             2022/12/12 → 2023/01/13
@@ -31,6 +34,7 @@ const Project01 = () => {
             <a
               href="https://github.com/jeongminhui/Digitalzone"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
@@ -65,9 +69,15 @@ const Project01 = () => {
                   기업 연계 실무 프로젝트로, 디지털존의 블록체인 사업인
                   도큐체인의 관리자 페이지를 제작하였습니다. 스토리보드를
                   기반으로 디자인 시안을 제작하고, 웹 페이지를 구현하였습니다.
-                  차트와 테이블을 이용하여 데이터를 신뢰성 있게 보여주되,
-                  대시보드를 활용하여 트렌디하고 다채로운 뷰를 구성하였습니다.
-                  블록 페이지를 전담하여 업무를 수행하였습니다.
+                  차트와 테이블을 이용하여{" "}
+                  <span className="blue">데이터를 신뢰성</span> 있게 보여주되,
+                  <span className="blue"> 대시보드를 활용</span>하여 트렌디하고
+                  다채로운 뷰를 구성하였습니다.
+                  <span className="blue">
+                    {" "}
+                    블록 페이지를 전담하여 업무를 수행
+                  </span>
+                  하였습니다.
                 </p>
               </TimelineContent>
             </TimelineItem>

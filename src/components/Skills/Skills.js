@@ -44,6 +44,10 @@ const Skills = () => {
               src="https://gyulls2.github.io/Portfolio/images/css.png"
               alt="파일없음"
             />
+            <img
+              src="https://gyulls2.github.io/Portfolio/images/sass.png"
+              alt="파일없음"
+            />
             <h3>CSS3 / SaSS</h3>
             <p>
               미디어 쿼리를 활용한 반응형 웹 제작 가능

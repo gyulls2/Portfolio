@@ -2,6 +2,17 @@
   width: 100%;
   height: 100vh;
 
+  .blink {
+    animation: blink 0.5s infinite;
+    font-size: 2.5rem;
+  }
+
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+
   .wrapper {
     height: 100%;
     display: flex;
@@ -12,8 +23,28 @@
       justify-content: center;
       align-items: center;
 
-      .key {
-        width: 75%;
+      div {
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+
+        .key {
+          width: 80%;
+          position: absolute;
+          transform: translateY(-50%);
+        }
+
+        .back {
+          animation: motion 0.9s linear 0s infinite alternate;
+        }
+        @keyframes motion {
+          0% {
+            margin-top: 0px;
+          } /* 처음 위치 */
+          100% {
+            margin-top: -8px;
+          } /* 마지막 위치 */
+        }
       }
     }
 
@@ -21,23 +52,37 @@
       width: 50%;
       display: flex;
       align-items: center;
+      white-space: pre-line;
 
       h1 {
-        font-size: 2.3rem;
+        font-size: 2.6rem;
         font-weight: normal;
-        line-height: 4rem;
+        line-height: 4.3rem;
+        min-height: 220px;
+        width: 100%;
+        font-family: "SANJUGotgam";
+      }
+
+      .textBox {
+        margin-bottom: 30px;
+      }
+
+      .text {
+        font-family: "LeferiPoint-SpecialA";
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-top: 3rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
       }
 
       .moreBtn {
         border-radius: 10px;
         height: 40px;
         margin-top: 70px;
+        background-color: #c44040;
+        font-weight: bold;
       }
     }
   }
@@ -48,16 +93,29 @@
     min-height: 100vh;
     height: auto;
 
+    .blink {
+      animation: blink 0.5s infinite;
+      font-size: 1.5rem;
+    }
+
     .wrapper {
       flex-flow: column wrap;
       margin-bottom: 50px;
 
       .keyImage {
         width: 100%;
+        min-height: 400px;
+        height: 50%;
 
-        .key {
-          width: 80%;
-          margin-top: 50px;
+        div {
+          width: 100%;
+          height: 100%;
+
+          .key {
+            width: 80%;
+            max-height: 350px;
+            margin-left: 10%;
+          }
         }
       }
 
@@ -65,19 +123,30 @@
         width: 100%;
         text-align: center;
 
+        .textBox {
+          margin-bottom: 0;
+        }
+
         h1 {
           font-size: 1.5rem;
           font-weight: normal;
           line-height: 3rem;
-          margin-top: 3rem;
+          height: 120px;
         }
 
         p {
           width: 76%;
           margin: 0 auto;
           font-size: 1rem;
-          margin-top: 3rem;
+          margin-top: -2.5rem;
           line-height: 2rem;
+        }
+
+        .moreBtn {
+          border-radius: 10px;
+          height: 40px;
+          margin-top: 40px;
+          background-color: #c44040;
         }
       }
     }
