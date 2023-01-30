@@ -47,7 +47,7 @@ const Project = () => {
             src={url}
             alt="파일없음"
             width={950}
-            style={{ margin: "20px 0s" }}
+            style={{ margin: "20px 0" }}
           ></img>
         </Modal>
 
@@ -66,13 +66,13 @@ const Project = () => {
             <Project01 showModal={showModal} />
           </SwiperSlide>
           <SwiperSlide>
-            <Project02 showModal={showModal}/>
+            <Project02 showModal={showModal} />
           </SwiperSlide>
           <SwiperSlide>
-            <Project03 showModal={showModal}/>
+            <Project03 showModal={showModal} />
           </SwiperSlide>
           <SwiperSlide>
-            <Project04 showModal={showModal}/>
+            <Project04 showModal={showModal} />
           </SwiperSlide>
         </Swiper>
       </div>

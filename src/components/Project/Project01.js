@@ -27,12 +27,17 @@ const Project01 = ({ showModal }) => {
             <br />
             팀 프로젝트 (7인)
             <br /> <br />
-            배포 링크&nbsp;
-            <BiLink size={20} style={{ position: "relative", top: "5px" }} />
-            &nbsp;(개발중)
+            <a
+              href="https://docuchain-minhuions.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              배포 링크&nbsp;
+              <BiLink size={20} style={{ position: "relative", top: "5px" }} />
+            </a>
             <br />
             <a
-              href="https://github.com/jeongminhui/Digitalzone"
+              href="https://github.com/gyulls2/Digitalzone"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -40,9 +45,14 @@ const Project01 = ({ showModal }) => {
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
             <br />
-            velog 회고록&nbsp;
-            <BiLink size={20} style={{ position: "relative", top: "5px" }} />
-            &nbsp;(준비중)
+            <a
+              href="https://gyulls2.github.io/Portfolio/images/project01.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              발표 자료&nbsp;
+              <BiLink size={20} style={{ position: "relative", top: "5px" }} />
+            </a>
           </p>
         </div>
 

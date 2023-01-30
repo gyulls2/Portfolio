@@ -77,7 +77,7 @@ const Header = () => {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <button type="button" onClick={darkOnOff}>
               <img
                 src="https://gyulls2.github.io/Portfolio/images/dark.svg"
@@ -85,7 +85,7 @@ const Header = () => {
                 className="darkBtn"
               />
             </button>
-          </li>
+          </li> */}
         </ul>
       </nav>
         <Progressbar />

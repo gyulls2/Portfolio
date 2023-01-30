@@ -44,10 +44,10 @@ const Project03 = ({ showModal }) => {
               Github&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
-            <br />
+            {/* <br />
             velog 회고록&nbsp;
             <BiLink size={20} style={{ position: "relative", top: "5px" }} />
-            &nbsp;(준비중)
+            &nbsp;(준비중) */}
           </p>
         </div>
 
