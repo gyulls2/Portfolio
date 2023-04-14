@@ -10,6 +10,8 @@ const Main = () => {
 
   return (
     <section className="mainSection" id="main">
+      <div className="eclipse1"></div>
+      <div className="eclipse2"></div>
       <img
         src="/images/Pill-Blue-Glossy.svg"
         alt="backgroundAsset"
@@ -20,8 +22,6 @@ const Main = () => {
         alt="backgroundAsset"
         className="roundCube-Orange-Glossy"
       />
-      <div className="eclipse1"></div>
-      <div className="eclipse2"></div>
 
       <div className="wrapper">
         <div className="keyText">
