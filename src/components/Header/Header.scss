@@ -1,17 +1,26 @@
 .header {
-  width: 100%;
+  width: 90%;
   height: 50px;
-  background-color: #fff;
-  position: fixed;
+  position: absolute;
+  padding-top: 20px;
+  left: 5%;
   z-index: 100;
   display: flex;
   flex-flow: row wrap;
+  color: var(--color);
 
   .logo {
     width: 10%;
     position: relative;
     top: 20%;
-    left: 30px;
+    cursor: pointer;
+
+    .logoText {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+    }
   }
 
   .progressbar {
@@ -24,25 +33,57 @@
     width: 90%;
     height: 100%;
     display: block;
+    display: flex;
+    justify-content: space-around;
 
     .menuList {
-      width: 100%;
+      width: 80%;
+      height: 50px;
+      line-height: 50px;
+      // justify-content: space-around;
+      display: flex;
+      padding-left: 15%;
+
+      li {
+        cursor: pointer;
+        margin-right: 100px;
+        font-family: "Poppins", sans-serif;
+
+        .to-right-underline {
+          position: relative;
+        }
+        .to-right-underline:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 0px;
+          height: 1px;
+          margin: 5px 0 0;
+          transition: all 0.2s ease-in-out;
+          transition-duration: 0.3s;
+          opacity: 0;
+          background-color: var(--color);
+        }
+        .to-right-underline:hover:after {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+
+      .darkBtn {
+        transform: translateY(30%);
+      }
+    }
+
+    .iconList {
       height: 50px;
       line-height: 50px;
       justify-content: space-around;
       display: flex;
 
       li {
-        cursor: pointer;
-
-        a:hover {
-          color: #407bff;
-          transition: 0.2s;
-        }
-      }
-
-      .darkBtn {
-        transform: translateY(30%);
+        margin-left: 40px;
       }
     }
   }
@@ -52,14 +93,16 @@
     font-size: 20px;
     position: absolute;
     right: 15px;
-    top: 15px;
-    color: #407bff;
+    top: 30px;
+    color: var(--color);
     cursor: pointer;
   }
 }
 
 @media all and (max-width: 768px) {
   .header {
+    padding-left: 30px;
+
     .progressbar {
       display: none;
     }

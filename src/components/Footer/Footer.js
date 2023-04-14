@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footerTitle">
-        김규리 포트폴리오
+        Kim Gyuri Portfolio
         <span className="copyright">Copyright ⓒ 김규리 All rights reserved.</span>
       </div>
       <div className="footerList">

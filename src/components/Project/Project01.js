@@ -11,7 +11,7 @@ const Project01 = ({ showModal }) => {
   return (
     <section className="projectSection">
       <h1>PROJECT</h1>
-      <h3>디지털존 블록체인 관리자 페이지</h3>
+      <h3>(주)디지털존 블록체인 모니터링 뷰어</h3>
 
       <div className="projectWrap">
         <div className="projectLeft">
@@ -98,7 +98,10 @@ const Project01 = ({ showModal }) => {
               </TimelineSeparator>
               <TimelineContent>
                 <span className="timeLineTitle">주요 기술</span>
-                <p>React, SaSS, Figma, Firebase, Github</p>
+                <p>
+                  React, Recoil, SaSS, Styled Components, Chart.js,
+                  Apexchart.js, Figma, Firebase, Github
+                </p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -109,7 +112,7 @@ const Project01 = ({ showModal }) => {
               <TimelineContent>
                 <span className="timeLineTitle">주요 기능</span>
                 <p className="last">
-                  React reducder, context를 활용한 상태 관리
+                  Recoil을 활용한 전역 상태 관리
                   <br />
                   react-router-dom 라이브러리를 활용한 라우팅
                   <br />
@@ -121,7 +124,7 @@ const Project01 = ({ showModal }) => {
                   <br />
                   Form 제출 시 DB와 연동하여 데이터 입력, 수정, 삭제 기능
                   <br />
-                  context를 활용하여 사용자 권한에 따라 뷰 구성 변경
+                  context, Styled Components를 활용하여 다크모드 구현
                   <br />
                   filter 메서드를 사용한 전체 검색 기능
                 </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Skills.scss";
+import { BsGithub } from "react-icons/bs";
 
 const Skills = () => {
   return (
@@ -76,9 +77,9 @@ const Skills = () => {
         <h1>.etc</h1>
         <div className="container">
           <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/github.png"
-              alt="파일없음"
+            <BsGithub
+              size={40}
+              style={{ marginTop: "50px", marginRight: "15px" }}
             />
             <h3>Github</h3>
             <p>

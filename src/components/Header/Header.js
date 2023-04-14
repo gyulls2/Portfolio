@@ -1,68 +1,51 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import "./Header.scss";
-import Progressbar from "./Progressbar";
+// import Progressbar from "./Progressbar";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsGithub } from "react-icons/bs";
+import { BsMoonStarsFill } from "react-icons/bs";
+import { HiSun } from "react-icons/hi";
 import SideNav from "./SideNav";
 
-const Header = () => {
+const Header = ({ toggleDarkMode, darkMode }) => {
   // 사이드 메뉴 토글
   const [isOpen, setIsOpen] = useState(false);
   const toggleSide = () => {
     setIsOpen(true);
   };
 
-  useEffect(() => {
-    const bgMode = window.localStorage.getItem("bgMode");
-    if (bgMode === "dark") {
-      document.getElementsByTagName("html")[0].classList.add("ui-dark");
-    }
-  }, []);
-
-  const darkOnOff = () => {
-    if (
-      document.getElementsByTagName("html")[0].classList.contains("ui-dark")
-    ) {
-      document.getElementsByTagName("html")[0].classList.remove("ui-dark");
-      window.localStorage.setItem("bgMode", "light");
-    } else {
-      document.getElementsByTagName("html")[0].classList.add("ui-dark");
-      window.localStorage.setItem("bgMode", "dark");
-    }
-  };
-
   return (
     <header className="header">
       <div className="logo">
-        <Link to="main" spy={true} smooth={true}>
-          <img
+        <Link to="main" spy={true} smooth={true} className="logoText">
+          {/* <img
             src="https://gyulls2.github.io/Portfolio/images/favicon.svg"
             alt="파일없음"
-          />
+          /> */}
+          Portfolio
         </Link>
       </div>
       <nav className="nav">
         <ul className="menuList">
           <li>
-            <Link to="main" spy={true} smooth={true}>
-              Home
-            </Link>
-          </li>
-
-          <li>
-            <Link to="intro" spy={true} smooth={true}>
-              About Me
-            </Link>
-          </li>
-
-          <li>
-            <Link to="skill" spy={true} smooth={true}>
+            <Link
+              to="skill"
+              spy={true}
+              smooth={true}
+              className="to-right-underline"
+            >
               Skills
             </Link>
           </li>
 
           <li>
-            <Link to="project" spy={true} smooth={true}>
+            <Link
+              to="project"
+              spy={true}
+              smooth={true}
+              className="to-right-underline"
+            >
               Project
             </Link>
           </li>
@@ -72,23 +55,44 @@ const Header = () => {
               href="https://velog.io/@tangerine"
               target="_blank"
               rel="noreferrer"
+              className="to-right-underline"
             >
-              Velog
+              Blog
             </a>
           </li>
+        </ul>
 
-          {/* <li>
-            <button type="button" onClick={darkOnOff}>
-              <img
-                src="https://gyulls2.github.io/Portfolio/images/dark.svg"
-                alt="파일없음"
-                className="darkBtn"
+        <ul className="iconList">
+          <li>
+            <a
+              href="https://github.com/gyulls2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub
+                size={28}
+                style={{ position: "relative", top: "15px" }}
               />
+            </a>
+          </li>
+          <li>
+            <button className="toggle-button" onClick={toggleDarkMode}>
+              {darkMode ? (
+                <BsMoonStarsFill
+                  size={26}
+                  style={{ position: "relative", top: "15px" }}
+                />
+              ) : (
+                <HiSun
+                  size={32}
+                  style={{ position: "relative", top: "15px" }}
+                />
+              )}
             </button>
-          </li> */}
+          </li>
         </ul>
       </nav>
-        <Progressbar />
+      {/* <Progressbar /> */}
       <button type="button" className="navBtn" onClick={toggleSide}>
         <GiHamburgerMenu />
       </button>

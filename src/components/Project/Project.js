@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal } from "antd";
+import { Modal } from "antd";
 import "./Project.scss";
 
 import Project01 from "./Project01";
@@ -8,7 +8,7 @@ import Project03 from "./Project03";
 import Project04 from "./Project04";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Mousewheel } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -46,21 +46,28 @@ const Project = () => {
           <img
             src={url}
             alt="파일없음"
-            width={950}
-            style={{ margin: "20px 0" }}
+            width="95%"
+            style={{ margin: "3%" }}
           ></img>
         </Modal>
 
         <Swiper
           slidesPerView={1}
-          loop={true}
-          pagination={true}
+          // loop={true}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Mousewheel]}
           className="mySwiper"
           speed={1000}
           observer={true}
-          type="progressbar"
+          mousewheel={{
+            forceToAxis: false,
+            releaseOnEdges: true,
+            sensitivity: 1,
+          }}
+          pagination={{
+            clickable: true, // 페이지 번호를 클릭하여 슬라이드를 변경할 수 있게 함
+            type: "bullets", // 페이지 번호 유형을 설정 (기본값은 'bullets', 다른 옵션은 'fraction', 'progressbar', 'custom')
+          }}
         >
           <SwiperSlide>
             <Project01 showModal={showModal} />

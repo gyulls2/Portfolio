@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
@@ -7,9 +8,15 @@ import Footer from "./components/Footer/Footer";
 import Project from "./components/Project/Project";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
-      <Header />
+    <div className={darkMode ? "App dark-mode" : "App"}>
+      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <Main />
       <Intro />
       <Skills />

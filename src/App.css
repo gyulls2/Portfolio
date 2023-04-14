@@ -1,18 +1,22 @@
-/* :root {
-  --color: #111;
+:root {
+  --color: #1f2937;
   --background-color: #fff;
   --lightblue: #f8f8fe;
   --btn: #407bff;
   --footer: #8c929a;
+  --intro-background: #f8f8fe;
+  --footer-background: #f9fafb;
 }
 
-.ui-dark {
-  --color: #fff;
-  --background-color: #212329;
+.dark-mode {
+  --color: #f9fafb;
+  --background-color: #0e1624;
   --lightblue: #212329;
   --btn: #407bff;
-  --footer: #555;
-} */
+  --footer: #8c929a;
+  --footer-background: #0c081f;
+  --intro-background: #0e1624;
+}
 
 @font-face {
   font-family: "NanumSquareNeo-Variable";
@@ -30,14 +34,13 @@
   font-style: normal;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   font-family: "NanumSquareNeo-Variable";
   box-sizing: border-box;
-
-  /* color: var(--color);
-  background-color: var(--background-color); */
 }
 
 li {
@@ -51,13 +54,10 @@ a {
 
 .App {
   width: 100vw;
-
-  /* background-color: aqua; */
 }
 
 .wrapper {
   width: 90%;
-  /* background-color: aquamarine; */
   margin: 0 auto;
 }
 

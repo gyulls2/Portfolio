@@ -1,10 +1,9 @@
 #project {
-  padding-top: 50px;
-
   .wrapper {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
+    background-color: var(--background-color);
 
     .mySwiper {
       .swiper-button-next {
@@ -18,6 +17,7 @@
   width: 100%;
   min-height: calc(100vh - 50px);
   padding: 0 80px;
+  color: var(--color);
 
   /*왼쪽에서 오른쪽으로 이동하는 에니메이션*/
   a {
@@ -42,10 +42,11 @@
   }
 
   h1 {
-    // font-weight: 500;
-    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
     margin-top: 70px;
-    margin-bottom: 20px;
   }
 
   h3 {
@@ -79,6 +80,8 @@
       height: 100%;
       text-align: left;
       padding-left: 70px;
+      padding-top: 40px;
+      margin-bottom: 40px;
 
       .projTimeLine {
         width: 100%;
