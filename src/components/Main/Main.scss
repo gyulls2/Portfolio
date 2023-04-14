@@ -156,6 +156,8 @@
       flex-flow: column wrap;
       margin: 100px auto 50px auto;
       padding: 30px 15px 0 15px;
+      background: none;
+      border: none;
 
       .keyImage {
         width: 100%;
@@ -175,6 +177,7 @@
 
       .keyText {
         width: 100%;
+        z-index: 10;
 
         h1 {
           font-weight: normal;

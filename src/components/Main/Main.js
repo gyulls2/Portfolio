@@ -13,12 +13,12 @@ const Main = () => {
       <div className="eclipse1"></div>
       <div className="eclipse2"></div>
       <img
-        src="/images/Pill-Blue-Glossy.svg"
+        src="https://gyulls2.github.io/Portfolio/images/Pill-Blue-Glossy.svg"
         alt="backgroundAsset"
         className="pill-Blue-Glossy"
       />
       <img
-        src="/images/RoundCube-Orange-Glossy.svg"
+        src="https://gyulls2.github.io/Portfolio/images/RoundCube-Orange-Glossy.svg"
         alt="backgroundAsset"
         className="roundCube-Orange-Glossy"
       />
@@ -64,7 +64,10 @@ const Main = () => {
         </div>
 
         <div className="keyImage">
-          <img src="/images/Group6.svg" alt="keyImage" />
+          <img
+            src="https://gyulls2.github.io/Portfolio/images/Group6.svg"
+            alt="keyImage"
+          />
         </div>
       </div>
     </section>
