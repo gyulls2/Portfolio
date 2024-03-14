@@ -9,7 +9,7 @@ import { BiLink } from "react-icons/bi";
 
 import proj03 from "../../asset/proj03.png";
 
-const Project03 = ({ showModal }) => {
+const Project03 = () => {
   return (
     <section className="projectSection">
       <p className="title">PROJECT</p>
@@ -17,14 +17,13 @@ const Project03 = ({ showModal }) => {
 
       <div className="projectWrap">
         <div className="projectLeft">
-          <img
-            // src="https://gyulls2.github.io/Portfolio/images/proj03.svg"
-            src={proj03}
-            alt="파일없음"
-            onClick={() =>
-              showModal("https://gyulls2.github.io/Portfolio/images/proj03.svg")
-            }
-          />
+          <a
+            href="https://gyulls2.github.io/accounterbook_app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={proj03} alt="proj03" />
+          </a>
           <p>
             2022/12/06 → 2022/12/18
             <br />
@@ -34,6 +33,7 @@ const Project03 = ({ showModal }) => {
               href="https://gyulls2.github.io/accounterbook_app/"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               배포 링크&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
@@ -43,6 +43,7 @@ const Project03 = ({ showModal }) => {
               href="https://github.com/gyulls2/accounterbook_app"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               Github&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />

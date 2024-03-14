@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Modal } from "antd";
 import "./Project.scss";
 
 import Project01 from "./Project01";
@@ -14,43 +13,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Project = () => {
-  const [loading, setLoading] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [url, setUrl] = useState("");
-
-  const showModal = (url) => {
-    setOpen(true);
-    setUrl(url);
-  };
-  const handleOk = () => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setOpen(false);
-    }, 3000);
-  };
-  const handleCancel = () => {
-    setOpen(false);
-  };
 
   return (
     <div id="project">
       <div className="wrapper">
-        <Modal
-          open={open}
-          onOk={handleOk}
-          onCancel={handleCancel}
-          footer={[]}
-          width={1000}
-        >
-          <img
-            src={url}
-            alt="파일없음"
-            width="95%"
-            style={{ margin: "3%" }}
-          />
-        </Modal>
-
         <Swiper
           slidesPerView={1}
           // loop={true}
@@ -70,16 +36,16 @@ const Project = () => {
           }}
         >
           <SwiperSlide>
-            <Project01 showModal={showModal} />
+            <Project01 />
           </SwiperSlide>
           <SwiperSlide>
-            <Project02 showModal={showModal} />
+            <Project02 />
           </SwiperSlide>
           <SwiperSlide>
-            <Project03 showModal={showModal} />
+            <Project03 />
           </SwiperSlide>
           <SwiperSlide>
-            <Project04 showModal={showModal} />
+            <Project04 />
           </SwiperSlide>
         </Swiper>
       </div>

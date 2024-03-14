@@ -5,13 +5,12 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
-import "./Project04.scss";
 import { BiLink } from "react-icons/bi";
 
 import proj04 from "../../asset/proj04.png";
 import proj05 from "../../asset/proj05.png";
 
-const Project04 = ({ showModal }) => {
+const Project04 = () => {
   return (
     <section className="projectSection">
       <p className="title">PROJECT</p>
@@ -20,28 +19,19 @@ const Project04 = ({ showModal }) => {
       <div className="projectWrap">
         <div className="projectLeft">
           <div className="imgBox">
-            <img
-              // src="https://gyulls2.github.io/Portfolio/images/proj04.svg"
-              src={proj04}
-              alt="파일없음"
-              style={{ width: "35%", marginRight: "5%" }}
-              onClick={() =>
-                showModal(
-                  "https://gyulls2.github.io/Portfolio/images/proj04.svg"
-                )
-              }
-            />
-            <img
-              // src="https://gyulls2.github.io/Portfolio/images/proj05.svg"
-              src={proj05}
-              alt="파일없음"
-              style={{ width: "35%" }}
-              onClick={() =>
-                showModal(
-                  "https://gyulls2.github.io/Portfolio/images/proj05.svg"
-                )
-              }
-            />
+            <a
+              href="http://tangerine.dothome.co.kr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={proj04}
+                alt="파일없음"
+                style={{ width: "35%", marginRight: "5%" }}
+              />
+
+              <img src={proj05} alt="파일없음" style={{ width: "35%" }} />
+            </a>
           </div>
 
           <p>
@@ -49,7 +39,12 @@ const Project04 = ({ showModal }) => {
             <br />
             팀 프로젝트 (3인)
             <br /> <br />
-            <a href="http://tangerine.dothome.co.kr/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://tangerine.dothome.co.kr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underLine"
+            >
               배포 링크&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
@@ -58,6 +53,7 @@ const Project04 = ({ showModal }) => {
               href="https://gyulls2.github.io/Portfolio/images/project.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               발표 자료&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />

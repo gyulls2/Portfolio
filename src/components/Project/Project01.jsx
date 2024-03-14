@@ -9,7 +9,7 @@ import { BiLink } from "react-icons/bi";
 
 import proj01 from "../../asset/proj01.png";
 
-const Project01 = ({ showModal }) => {
+const Project01 = () => {
   return (
     <section className="projectSection">
       <h2 className="a11y-hidden">PROJECT</h2>
@@ -18,14 +18,16 @@ const Project01 = ({ showModal }) => {
 
       <div className="projectWrap">
         <div className="projectLeft">
-          <img
-            // src="https://gyulls2.github.io/Portfolio/images/proj01.svg"
-            src={proj01}
-            alt="파일없음"
-            onClick={() =>
-              showModal("https://gyulls2.github.io/Portfolio/images/proj01.svg")
-            }
-          />
+          <a
+            href="https://docuchain-minhuions.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={proj01}
+              alt="proj01"
+            />
+          </a>
           <p>
             2022/12/12 → 2023/01/13
             <br />
@@ -35,6 +37,7 @@ const Project01 = ({ showModal }) => {
               href="https://docuchain-minhuions.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               배포 링크&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
@@ -44,6 +47,7 @@ const Project01 = ({ showModal }) => {
               href="https://github.com/gyulls2/Digitalzone"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               Github&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
@@ -53,6 +57,7 @@ const Project01 = ({ showModal }) => {
               href="https://gyulls2.github.io/Portfolio/images/project01.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               발표 자료&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />

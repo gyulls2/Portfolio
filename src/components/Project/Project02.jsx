@@ -9,7 +9,7 @@ import { BiLink } from "react-icons/bi";
 
 import proj02 from "../../asset/proj02.png";
 
-const Project02 = ({ showModal }) => {
+const Project02 = () => {
   return (
     <section className="projectSection">
       <p className="title">PROJECT</p>
@@ -17,14 +17,13 @@ const Project02 = ({ showModal }) => {
 
       <div className="projectWrap">
         <div className="projectLeft">
-          <img
-            // src="https://gyulls2.github.io/Portfolio/images/proj02.svg"
-            src={proj02}
-            alt="파일없음"
-            onClick={() =>
-              showModal("https://gyulls2.github.io/Portfolio/images/proj02.svg")
-            }
-          />
+          <a
+            href="https://sesac-5cabd.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={proj02} alt="proj02" />
+          </a>
           <p>
             2022/11/14 → 2022/11/23
             <br />
@@ -34,6 +33,7 @@ const Project02 = ({ showModal }) => {
               href="https://sesac-5cabd.web.app/"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               배포 링크&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
@@ -43,6 +43,7 @@ const Project02 = ({ showModal }) => {
               href="https://github.com/gyulls2/semi_project_firebase"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               Github&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
@@ -52,6 +53,7 @@ const Project02 = ({ showModal }) => {
               href="https://velog.io/@tangerine/SeSAC-JavaScript-Semi-Project"
               target="_blank"
               rel="noopener noreferrer"
+              className="underLine"
             >
               velog 회고록&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
