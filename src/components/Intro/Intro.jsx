@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <section className="introSection" id="intro">
       <div className="wrapper">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <div className="introWrap">
           <div className="introLeft">
             <img

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skills.scss";
-import { BsGithub } from "react-icons/bs";
 
 const Skills = () => {
   return (

@@ -12,7 +12,7 @@ import proj02 from "../../asset/proj02.png";
 const Project02 = ({ showModal }) => {
   return (
     <section className="projectSection">
-      <h1>PROJECT</h1>
+      <p className="title">PROJECT</p>
       <h3>갈피를 잡다</h3>
 
       <div className="projectWrap">

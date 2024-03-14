@@ -5,52 +5,63 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
+import "./Project04.scss";
 import { BiLink } from "react-icons/bi";
 
-import proj03 from "../../asset/proj03.png";
+import proj04 from "../../asset/proj04.png";
+import proj05 from "../../asset/proj05.png";
 
-const Project03 = ({ showModal }) => {
+const Project04 = ({ showModal }) => {
   return (
     <section className="projectSection">
-      <h1>PROJECT</h1>
-      <h3>간편가계부</h3>
+      <p className="title">PROJECT</p>
+      <h3>달빛러닝페스티벌 랜딩페이지(반응형)</h3>
 
       <div className="projectWrap">
         <div className="projectLeft">
-          <img
-            // src="https://gyulls2.github.io/Portfolio/images/proj03.svg"
-            src={proj03}
-            alt="파일없음"
-            onClick={() =>
-              showModal("https://gyulls2.github.io/Portfolio/images/proj03.svg")
-            }
-          />
+          <div className="imgBox">
+            <img
+              // src="https://gyulls2.github.io/Portfolio/images/proj04.svg"
+              src={proj04}
+              alt="파일없음"
+              style={{ width: "35%", marginRight: "5%" }}
+              onClick={() =>
+                showModal(
+                  "https://gyulls2.github.io/Portfolio/images/proj04.svg"
+                )
+              }
+            />
+            <img
+              // src="https://gyulls2.github.io/Portfolio/images/proj05.svg"
+              src={proj05}
+              alt="파일없음"
+              style={{ width: "35%" }}
+              onClick={() =>
+                showModal(
+                  "https://gyulls2.github.io/Portfolio/images/proj05.svg"
+                )
+              }
+            />
+          </div>
+
           <p>
-            2022/12/06 → 2022/12/18
+            2022/08/10 → 2022/08/17
             <br />
-            개인 프로젝트
+            팀 프로젝트 (3인)
             <br /> <br />
-            <a
-              href="https://gyulls2.github.io/accounterbook_app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="http://tangerine.dothome.co.kr/" target="_blank" rel="noopener noreferrer">
               배포 링크&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
             <br />
             <a
-              href="https://github.com/gyulls2/accounterbook_app"
+              href="https://gyulls2.github.io/Portfolio/images/project.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github&nbsp;
+              발표 자료&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
-            {/* <br />
-            velog 회고록&nbsp;
-            <BiLink size={20} style={{ position: "relative", top: "5px" }} />
-            &nbsp;(준비중) */}
           </p>
         </div>
 
@@ -73,16 +84,14 @@ const Project03 = ({ showModal }) => {
               <TimelineContent>
                 <span className="timeLineTitle">프로젝트 소개</span>
                 <p>
-                  간단한 가계부 페이지로, Form에 수입, 지출을 입력받아 표로
-                  정리하여 나타냅니다.{" "}
-                  <span className="blue">차트 라이브러리를 사용</span>하여
-                  가계부 내역을 한눈에 볼 수 있도록 데이터를 시각화하였습니다.
-                  월별 수입과 지출을 나타내는 차트로{" "}
-                  <span className="blue">월별 자산의 흐름을 쉽게 파악</span>할
-                  수 있으며, 지출을 카테고리별로 나누어{" "}
-                  <span className="blue">소비 분석 및 소비 성향을 파악</span>할
-                  수 있도록 도넛 차트를 활용하였습니다. 개인 사이드 프로젝트로
-                  React 사용 경험 및 숙련도 향상을 위해 진행하였습니다.
+                  달빛 러닝 페스티벌은 마라톤과 음악 페스티벌이 합쳐진 축제로,
+                  페르소나 기법을 활용하여 기획하였습니다. 타겟층인{" "}
+                  <span className="blue">MZ 세대의 흥미를 유도</span>할 수
+                  있도록 캐릭터 굿즈, 스토리텔링, 달빛네컷 등 다양한 콘텐츠로
+                  축제의 <span className="blue">랜딩 페이지를 구성</span>하였고,{" "}
+                  <span className="blue">디자인 및 반응형 웹</span>을 제작
+                  하였습니다. 3인으로 진행한 팀 프로젝트로, 팀장을 맡아
+                  프로젝트를 수행하였습니다.
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -93,7 +102,7 @@ const Project03 = ({ showModal }) => {
               </TimelineSeparator>
               <TimelineContent>
                 <span className="timeLineTitle">주요 기술</span>
-                <p>React, SaSS, Chart-js </p>
+                <p>HTML, CSS, JQuery, Photoshop, Illustrator</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -104,17 +113,17 @@ const Project03 = ({ showModal }) => {
               <TimelineContent>
                 <span className="timeLineTitle">주요 기능</span>
                 <p className="last">
-                  React Hooks를 사용한 상태 관리
+                  미디어 쿼리를 사용한 반응형 웹 구현
                   <br />
-                  Chart-js 라이브러리를 사용하여 차트 표현
+                  JQuery를 사용한 드롭다운 메뉴 구현
                   <br />
-                  소비 분석 레포트를 통해 사용자의 소비 성향 파악 가능
+                  뷰 사이즈 변경 시 메뉴바 형태 변경
                   <br />
-                  filter 메서드를 사용한 월별 필터 기능
+                  스크롤 위치에 따른 메뉴바 색상 변경
                   <br />
-                  MUI 라이브러리를 활용한 테이블 표현
+                  이미지 클릭 시 모달창으로 확대 기능
                   <br />
-                  SaSS를 활용한 컴포넌트 스타일링
+                  이미지 캐러셀 기능
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -125,4 +134,4 @@ const Project03 = ({ showModal }) => {
   );
 };
 
-export default Project03;
+export default Project04;

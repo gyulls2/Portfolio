@@ -12,7 +12,8 @@ import proj01 from "../../asset/proj01.png";
 const Project01 = ({ showModal }) => {
   return (
     <section className="projectSection">
-      <h1>PROJECT</h1>
+      <h2 className="a11y-hidden">PROJECT</h2>
+      <p className="title">PROJECT</p>
       <h3>(주)디지털존 블록체인 모니터링 뷰어</h3>
 
       <div className="projectWrap">
