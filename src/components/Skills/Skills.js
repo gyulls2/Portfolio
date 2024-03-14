@@ -6,13 +6,9 @@ const Skills = () => {
   return (
     <section className="skillsSection" id="skill">
       <div className="wrapper">
-        <h1>Skills</h1>
+        <h2 className="title">Skills</h2>
         <div className="container">
-          <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/logo192.png"
-              alt="파일없음"
-            />
+          <div className="box box1">
             <h3>React</h3>
             <p>
               Hooks를 활용한 상태관리 가능
@@ -25,11 +21,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="updown"></div>
-          <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/js.png"
-              alt="파일없음"
-            />
+          <div className="box box2">
             <h3>JavaScript / TypeScript</h3>
             <p>
               ES6+ 문법 능숙하게 사용 가능
@@ -40,15 +32,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="updown"></div>
-          <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/css.png"
-              alt="파일없음"
-            />
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/sass.png"
-              alt="파일없음"
-            />
+          <div className="box box3">
             <h3>CSS3 / SaSS</h3>
             <p>
               미디어 쿼리를 활용한 반응형 웹 제작 가능
@@ -59,11 +43,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="updown"></div>
-          <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/html.png"
-              alt="파일없음"
-            />
+          <div className="box box4">
             <h3>HTML</h3>
             <p>
               웹표준과 웹 접근성을 준수하여 웹페이지 제작 가능
@@ -74,13 +54,9 @@ const Skills = () => {
             </p>
           </div>
         </div>
-        <h1>.etc</h1>
+        <p className="title">.etc</p>
         <div className="container">
-          <div className="box">
-            <BsGithub
-              size={40}
-              style={{ marginTop: "50px", marginRight: "15px" }}
-            />
+          <div className="box box5">
             <h3>Github</h3>
             <p>
               Commit convention을 통한 협업 경험
@@ -89,11 +65,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="updown"></div>
-          <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/figma.png"
-              alt="파일없음"
-            />
+          <div className="box box6">
             <h3>Figma</h3>
             <p>
               Figma 협업 경험
@@ -104,11 +76,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="updown"></div>
-          <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/notion.png"
-              alt="파일없음"
-            />
+          <div className="box box7">
             <h3>Notion</h3>
             <p>
               노션 페이지 관리, 문서 작성 가능
@@ -117,11 +85,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="updown"></div>
-          <div className="box">
-            <img
-              src="https://gyulls2.github.io/Portfolio/images/vscode.png"
-              alt="파일없음"
-            />
+          <div className="box box8">
             <h3>vs code</h3>
             <p>주로 VS Code를 통해 작업 진행</p>
           </div>

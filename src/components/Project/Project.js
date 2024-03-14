@@ -48,7 +48,7 @@ const Project = () => {
             alt="파일없음"
             width="95%"
             style={{ margin: "3%" }}
-          ></img>
+          />
         </Modal>
 
         <Swiper

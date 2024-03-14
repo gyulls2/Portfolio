@@ -1,6 +1,7 @@
 import React from "react";
 import "./Intro.scss";
 import TimeLine from "./TimeLine";
+import profile from "../../asset/img-profile.jpg"
 
 const Intro = () => {
   return (
@@ -10,7 +11,8 @@ const Intro = () => {
         <div className="introWrap">
           <div className="introLeft">
             <img
-              src="https://gyulls2.github.io/Portfolio/images/IMG_2227.jpg"
+              // src="https://gyulls2.github.io/Portfolio/images/IMG_2227.jpg"
+              src={profile}
               alt="파일없음"
               className="photo"
             />

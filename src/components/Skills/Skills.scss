@@ -12,7 +12,7 @@
     min-height: 100vh;
     margin: 0 auto;
 
-    h1 {
+    .title {
       font-family: "Poppins", sans-serif;
       font-style: normal;
       padding-top: 50px;
@@ -31,12 +31,6 @@
         width: 20%;
         height: 100%;
 
-        img {
-          margin-top: 50px;
-          width: 40px;
-          margin-right: 15px;
-        }
-
         h3 {
           margin: 20px 0;
           font-weight: 600;
@@ -47,6 +41,62 @@
           line-height: 1.5rem;
           font-size: 0.9rem;
         }
+      }
+      
+      .box::before, .box3::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        margin-top: 50px;
+        display: inline-block;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .box3 {
+        position: relative;
+      }
+
+      .box3::after {
+        position: absolute;
+        top:0;
+        left: 50px;
+
+        background: url(../../asset/icon-sass.png) no-repeat center center / contain;
+      }
+
+      .box1::before {
+        background-image: url(../../asset/icon-react.png);
+      }
+
+      .box2::before {
+        background-image: url(../../asset/icon-js.png);
+      }
+
+      .box3::before {
+        background-image: url(../../asset/icon-css.png);
+      }
+
+      .box4::before {
+        background-image: url(../../asset/icon-html.png);
+      }
+
+      .box5::before {
+        background-image: url(../../asset/icon-github.png);
+      }
+
+      .box6::before {
+        background-image: url(../../asset/icon-figma.png);
+      }
+
+      .box7::before {
+        background-image: url(../../asset/icon-notion.png);
+      }
+
+      .box8::before {
+        background-image: url(../../asset/icon-vscode.png);
       }
     }
   }

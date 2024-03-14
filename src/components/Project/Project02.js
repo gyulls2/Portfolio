@@ -7,6 +7,8 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import { BiLink } from "react-icons/bi";
 
+import proj02 from "../../asset/proj02.png";
+
 const Project02 = ({ showModal }) => {
   return (
     <section className="projectSection">
@@ -16,7 +18,8 @@ const Project02 = ({ showModal }) => {
       <div className="projectWrap">
         <div className="projectLeft">
           <img
-            src="https://gyulls2.github.io/Portfolio/images/proj02.svg"
+            // src="https://gyulls2.github.io/Portfolio/images/proj02.svg"
+            src={proj02}
             alt="파일없음"
             onClick={() =>
               showModal("https://gyulls2.github.io/Portfolio/images/proj02.svg")

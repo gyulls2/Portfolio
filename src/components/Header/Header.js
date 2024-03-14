@@ -19,10 +19,6 @@ const Header = ({ toggleDarkMode, darkMode }) => {
     <header className="header">
       <div className="logo">
         <Link to="main" spy={true} smooth={true} className="logoText">
-          {/* <img
-            src="https://gyulls2.github.io/Portfolio/images/favicon.svg"
-            alt="파일없음"
-          /> */}
           Portfolio
         </Link>
       </div>

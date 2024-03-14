@@ -8,6 +8,9 @@ import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import "./Project04.scss";
 import { BiLink } from "react-icons/bi";
 
+import proj04 from "../../asset/proj04.png";
+import proj05 from "../../asset/proj05.png";
+
 const Project04 = ({ showModal }) => {
   return (
     <section className="projectSection">
@@ -18,7 +21,8 @@ const Project04 = ({ showModal }) => {
         <div className="projectLeft">
           <div className="imgBox">
             <img
-              src="https://gyulls2.github.io/Portfolio/images/proj04.svg"
+              // src="https://gyulls2.github.io/Portfolio/images/proj04.svg"
+              src={proj04}
               alt="파일없음"
               style={{ width: "35%", marginRight: "5%" }}
               onClick={() =>
@@ -28,7 +32,8 @@ const Project04 = ({ showModal }) => {
               }
             />
             <img
-              src="https://gyulls2.github.io/Portfolio/images/proj05.svg"
+              // src="https://gyulls2.github.io/Portfolio/images/proj05.svg"
+              src={proj05}
               alt="파일없음"
               style={{ width: "35%" }}
               onClick={() =>
