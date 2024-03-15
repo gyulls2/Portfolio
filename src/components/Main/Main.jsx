@@ -5,9 +5,9 @@ import { Link } from "react-scroll";
 
 import bg_pill from "../../asset/bg-pill-blue.svg";
 import bg_cube from "../../asset/bg-roundCube-orange.svg";
+import bg_toroid from "../../asset/bg-superToroid-yellow.svg";
 
-import img_key from "../../asset/img-key.png"
-
+import img_key from "../../asset/img-key.png";
 
 const Main = () => {
   const clickHandler = () => {
@@ -18,15 +18,16 @@ const Main = () => {
     <section className="mainSection" id="main">
       <div className="eclipse1"></div>
       <div className="eclipse2"></div>
-      <img
-        src={bg_pill}
-        alt="backgroundAsset"
-        className="pill-Blue-Glossy"
-      />
+      <img src={bg_pill} alt="backgroundAsset" className="bg-pill-Blue-Glossy" />
       <img
         src={bg_cube}
         alt="backgroundAsset"
-        className="roundCube-Orange-Glossy"
+        className="bg-roundCube-Orange-Glossy"
+      />
+      <img
+        src={bg_toroid}
+        alt="backgroundAsset"
+        className="bg-superToroid-yellow"
       />
 
       <div className="wrapper">
@@ -70,10 +71,7 @@ const Main = () => {
         </div>
 
         <div className="keyImage">
-          <img
-            src={img_key}
-            alt="keyImage"
-          />
+          <img src={img_key} alt="keyImage" />
         </div>
       </div>
     </section>
