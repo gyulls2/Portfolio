@@ -5,7 +5,9 @@ import { Link } from "react-scroll";
 
 import bg_pill from "../../asset/bg-pill-blue.svg";
 import bg_cube from "../../asset/bg-roundCube-orange.svg";
-import img_main from "../../asset/img-main.svg";
+
+import img_key from "../../asset/img-key.png"
+
 
 const Main = () => {
   const clickHandler = () => {
@@ -17,13 +19,11 @@ const Main = () => {
       <div className="eclipse1"></div>
       <div className="eclipse2"></div>
       <img
-        // src="https://gyulls2.github.io/Portfolio/images/Pill-Blue-Glossy.svg"
         src={bg_pill}
         alt="backgroundAsset"
         className="pill-Blue-Glossy"
       />
       <img
-        // src="https://gyulls2.github.io/Portfolio/images/RoundCube-Orange-Glossy.svg"
         src={bg_cube}
         alt="backgroundAsset"
         className="roundCube-Orange-Glossy"
@@ -71,8 +71,7 @@ const Main = () => {
 
         <div className="keyImage">
           <img
-            // src="https://gyulls2.github.io/Portfolio/images/Group6.svg"
-            src={img_main}
+            src={img_key}
             alt="keyImage"
           />
         </div>
