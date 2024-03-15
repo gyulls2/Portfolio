@@ -1,9 +1,10 @@
 #project {
+  background-color: var(--background-color);
+
   .wrapper {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    background-color: var(--background-color);
 
     .mySwiper {
       .swiper-button-next {
@@ -46,7 +47,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
-    margin-top: 70px;
+    padding-top: 70px;
   }
 
   h3 {
