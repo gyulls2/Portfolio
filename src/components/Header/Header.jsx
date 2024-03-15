@@ -1,6 +1,5 @@
 import React, {  useState } from "react";
 import "./Header.scss";
-// import Progressbar from "./Progressbar";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsGithub } from "react-icons/bs";
@@ -88,7 +87,6 @@ const Header = ({ toggleDarkMode, darkMode }) => {
           </li>
         </ul>
       </nav>
-      {/* <Progressbar /> */}
       <button type="button" className="navBtn" onClick={toggleSide}>
         <GiHamburgerMenu />
       </button>
