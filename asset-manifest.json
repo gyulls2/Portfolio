@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.df9bf1d9.css",
+    "main.js": "/Portfolio/static/js/main.1db81fb6.js",
+    "static/media/img-key.png": "/Portfolio/static/media/img-key.8ba57ce2a179f43cb7d0.png",
+    "static/media/img-profile.jpg": "/Portfolio/static/media/img-profile.e7a52e9133469c71a06a.jpg",
+    "static/media/icon-figma.png": "/Portfolio/static/media/icon-figma.f8a03d875f1467365fdc.png",
+    "static/media/bg-roundCube-orange.svg": "/Portfolio/static/media/bg-roundCube-orange.e14c3a4b26b935b7d50149d6b54b9548.svg",
+    "static/media/bg-superToroid-yellow.svg": "/Portfolio/static/media/bg-superToroid-yellow.59da6cbbbaad944b552be4d0f17e858b.svg",
+    "static/media/bg-pill-blue.svg": "/Portfolio/static/media/bg-pill-blue.7d156fbfe8afa2427b5e0ce35280597f.svg",
+    "static/media/proj02.png": "/Portfolio/static/media/proj02.7665061dd6acea53fdab.png",
+    "static/media/proj01.png": "/Portfolio/static/media/proj01.fd4432d065d7db324a66.png",
+    "static/media/proj05.png": "/Portfolio/static/media/proj05.0051818a68452277606c.png",
+    "static/media/icon-sass.png": "/Portfolio/static/media/icon-sass.e5f07934576190abefbb.png",
+    "static/media/proj03.png": "/Portfolio/static/media/proj03.f43b2486180393830ee5.png",
+    "static/media/proj04.png": "/Portfolio/static/media/proj04.d481f5cf0258c4f85110.png",
+    "index.html": "/Portfolio/index.html",
+    "main.df9bf1d9.css.map": "/Portfolio/static/css/main.df9bf1d9.css.map",
+    "main.1db81fb6.js.map": "/Portfolio/static/js/main.1db81fb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df9bf1d9.css",
+    "static/js/main.1db81fb6.js"
+  ]
+}
