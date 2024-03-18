@@ -14,7 +14,7 @@
   --lightblue: #212329;
   --btn: #407bff;
   --footer: #8c929a;
-  --footer-background: #0e1624;
+  --footer-background: #1C2433;
   --intro-background: #0e1624;
 }
 
@@ -68,4 +68,19 @@ body {
 button {
   all: unset;
   cursor: pointer;
+}
+
+.App, .wrapper, button, a, h1, p, section {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
 }
