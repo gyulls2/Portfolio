@@ -8,7 +8,6 @@ import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import { BiLink } from "react-icons/bi";
 
 import proj00 from "../../asset/proj00.png";
-// import proj00 from "../../asset/proj00_test.png";
 
 const Project00 = () => {
   return (
