@@ -7,33 +7,31 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import { BiLink } from "react-icons/bi";
 
-import proj01 from "../../asset/proj01.png";
+import proj00 from "../../asset/proj00.png";
+// import proj00 from "../../asset/proj00_test.png";
 
-const Project01 = () => {
+const Project00 = () => {
   return (
     <section className="projectSection">
       <p className="title">PROJECT</p>
-      <h3>(주)디지털존 블록체인 모니터링 뷰어</h3>
+      <h3>SUBONE</h3>
 
       <div className="projectWrap">
         <div className="projectLeft">
           <a
-            href="https://docuchain-minhuions.netlify.app/"
+            href="https://frontendschool7.github.io/villains/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={proj01}
-              alt="proj01"
-            />
+            <img src={proj00} alt="proj00" />
           </a>
           <p>
-            2022.12.12 ~ 2023.01.13
+            2023.10.12 ~ 2023.11.09
             <br />
-            팀 프로젝트 (7인)
+            팀 프로젝트 (4인)
             <br /> <br />
             <a
-              href="https://docuchain-minhuions.netlify.app/"
+              href="https://frontendschool7.github.io/villains/"
               target="_blank"
               rel="noopener noreferrer"
               className="underLine"
@@ -43,22 +41,42 @@ const Project01 = () => {
             </a>
             <br />
             <a
-              href="https://github.com/gyulls2/Digitalzone"
+              href="https://github.com/FRONTENDSCHOOL7/villains"
               target="_blank"
               rel="noopener noreferrer"
               className="underLine"
             >
-              Github&nbsp;
+              README&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
             <br />
             <a
-              href="https://gyulls2.github.io/Portfolio/images/project01.pdf"
+              href="https://www.figma.com/file/ChSjZuBQFDF8FJxwrXAgja/villains_figma?type=design&node-id=102535%3A1224&mode=design&t=C0UAVKtFe9fZP34U-1"
               target="_blank"
               rel="noopener noreferrer"
               className="underLine"
             >
-              발표 자료&nbsp;
+              Figma&nbsp;
+              <BiLink size={20} style={{ position: "relative", top: "5px" }} />
+            </a>
+            <br />
+            <a
+              href="https://sleepingoff.notion.site/17a927fcbf4d42c4bd4b250e88201b46?v=174ea0763a4a4ad88f40bf32031db8c0&pvs=4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underLine"
+            >
+              팀 노션&nbsp;
+              <BiLink size={20} style={{ position: "relative", top: "5px" }} />
+            </a>
+            <br />
+            <a
+              href="https://github.com/FRONTENDSCHOOL7/villains/wiki"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underLine"
+            >
+              Github Wiki&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
           </p>
@@ -84,18 +102,7 @@ const Project01 = () => {
               <TimelineContent>
                 <span className="timeLineTitle">프로젝트 소개</span>
                 <p>
-                  기업 연계 실무 프로젝트로, 디지털존의 블록체인 사업인
-                  도큐체인의 관리자 페이지를 제작하였습니다. 스토리보드를
-                  기반으로 디자인 시안을 제작하고, 웹 페이지를 구현하였습니다.
-                  차트와 테이블을 이용하여{" "}
-                  <span className="blue">데이터를 신뢰성</span> 있게 보여주되,
-                  <span className="blue"> 대시보드를 활용</span>하여 트렌디하고
-                  다채로운 뷰를 구성하였습니다.
-                  <span className="blue">
-                    {" "}
-                    블록 페이지를 전담하여 업무를 수행
-                  </span>
-                  하였습니다.
+                SUBONE은 서울의 일상생활 속 교통과 커뮤니티를 연결하는 서비스입니다. 서울 지하철 1호선 이용자를 위해 <span className="blue">커뮤니티 기능을 통한 소통 및 편리한 지하철 택배 배송 서비스</span>를 제공합니다. 이 프로젝트에서 저는 디자인 리더로 활동하며 <span className="blue">Figma를 사용한 디자인 시스템 구축 및 UI/UX 디자인을 담당</span>했습니다. 또한 백앤드 API를 활용하여 <span className="blue">게시글 페이지를 개발</span>하였습니다.
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -107,8 +114,7 @@ const Project01 = () => {
               <TimelineContent>
                 <span className="timeLineTitle">주요 기술</span>
                 <p>
-                  React, Recoil, SaSS, Styled Components, Chart.js,
-                  Apexchart.js, Figma, Firebase, Github
+                React, React Query, Recoil, Axios, Vite, Styled-components, Figma, Github
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -120,21 +126,17 @@ const Project01 = () => {
               <TimelineContent>
                 <span className="timeLineTitle">주요 기능</span>
                 <p className="last">
-                  Recoil을 활용한 전역 상태 관리
+                <span className="bold">CRUD 게시판:</span> RESTful API를 활용하여 사용자 인터랙션을 제공하는 CRUD 게시판 구현
                   <br />
-                  react-router-dom 라이브러리를 활용한 라우팅
+                  <span className="bold">상태 관리:</span> React Query와 Recoil을 활용하여 효율적인 상태 관리 시스템 구축
                   <br />
-                  Firebase DB를 활용한 데이터 생성 및 관리
+                  <span className="bold">지도 상의 게시글 표시:</span> 카카오 지도 API를 이용해 사용자들이 올린 게시글을 지도 위에 표시
                   <br />
-                  Firebase Authentication을 활용한 로그인 및 권한 관리
+                  <span className="bold">지하철 도착정보 검색:</span> 서울 지하철 API를 활용해 실시간 도착 정보 검색 기능 제공
                   <br />
-                  차트 라이브러리를 활용한 데이터 시각화
+                  <span className="bold">공통 컴포넌트:</span> 커스텀 훅을 활용해 모달, 바텀시트, 무한 스크롤 등의 공통 UI 컴포넌트 구현
                   <br />
-                  Form 제출 시 DB와 연동하여 데이터 입력, 수정, 삭제 기능
-                  <br />
-                  context, Styled Components를 활용하여 다크모드 구현
-                  <br />
-                  filter 메서드를 사용한 전체 검색 기능
+                  <span className="bold">Form 데이터 관리:</span> react-hook-form을 사용하여 효율적으로 폼 데이터 관리
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -145,4 +147,4 @@ const Project01 = () => {
   );
 };
 
-export default Project01;
+export default Project00;

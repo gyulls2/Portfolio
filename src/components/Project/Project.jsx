@@ -5,12 +5,14 @@ import Project01 from "./Project01";
 import Project02 from "./Project02";
 import Project03 from "./Project03";
 import Project04 from "./Project04";
+import Project00 from "./Project00";
 
 const Project = () => {
   return (
     <div id="project">
       <div className="wrapper">
         <h2 className="a11y-hidden">PROJECT</h2>
+        <Project00 />
         <Project01 />
         <Project02 />
         <Project03 />
