@@ -23,7 +23,7 @@ const Skills = () => {
           <div className="box box2">
             <h3>JavaScript / TypeScript</h3>
             <p>
-              ES6+ 문법 능숙하게 사용 가능
+              ES6 문법 능숙하게 사용 가능
               <br />
               fetch, Ajax로 데이터 통신, API 활용 가능
               <br />
@@ -61,17 +61,19 @@ const Skills = () => {
               Commit convention을 통한 협업 경험
               <br />
               pull, push, commit 등의 git 명령어 사용 가능
+              <br />
+              효율적인 협업을 위한 Branch 전략 수립
             </p>
           </div>
           <div class="updown"></div>
           <div className="box box6">
             <h3>Figma</h3>
             <p>
-              Figma 협업 경험
+              Figma를 사용한 협업 경험
               <br />
-              Figma로 프로토타입 제작 가능
+              Figma를 기반으로 한 UI 컴포넌트 제작 가능
               <br />
-              Figma를 이용한 프로젝트 디자인 시안 제작 경험
+              프로젝트 디자인 시스템 구축, UIUX 디자인 경험
             </p>
           </div>
           <div class="updown"></div>
@@ -81,6 +83,8 @@ const Skills = () => {
               노션 페이지 관리, 문서 작성 가능
               <br />
               노션을 통한 협업과 일정관리 경험
+              <br />
+              노션 데이터베이스 사용 가능
             </p>
           </div>
           <div class="updown"></div>

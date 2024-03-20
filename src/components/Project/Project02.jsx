@@ -45,7 +45,7 @@ const Project02 = () => {
               rel="noopener noreferrer"
               className="underLine"
             >
-              Github&nbsp;
+              README&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
             <br />
