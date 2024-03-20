@@ -53,7 +53,7 @@ const Project01 = () => {
             </a>
             <br />
             <a
-              href="https://gyulls2.github.io/Portfolio/images/project01.pdf"
+              href="https://drive.google.com/file/d/1m_E-xpUjOV4od21jx0LtCIhk6kLGYXBS/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="underLine"

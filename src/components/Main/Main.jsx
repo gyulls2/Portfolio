@@ -10,15 +10,22 @@ import bg_toroid from "../../asset/bg-superToroid-yellow.svg";
 import img_key from "../../asset/img-key.png";
 
 const Main = () => {
-  const clickHandler = () => {
-    window.open("https://gyulls2.github.io/Portfolio/images/resume.pdf");
+  const openPDF = () => {
+    const url =
+      "https://drive.google.com/file/d/1i1CARQe1AKIiY6g0bCbIG8PtLlYSbFyd/view?usp=sharing";
+
+    window.open(url, "_blank");
   };
 
   return (
     <section className="mainSection" id="main">
       <div className="eclipse1"></div>
       <div className="eclipse2"></div>
-      <img src={bg_pill} alt="backgroundAsset" className="bg-pill-Blue-Glossy" />
+      <img
+        src={bg_pill}
+        alt="backgroundAsset"
+        className="bg-pill-Blue-Glossy"
+      />
       <img
         src={bg_cube}
         alt="backgroundAsset"
@@ -49,7 +56,7 @@ const Main = () => {
               ‘꾸준히, 즐겁게’라는 가치관으로 프론트엔드 개발 역량을 향상시키고
               있습니다.
             </p>
-            <button className="btn-hover color-3" onClick={clickHandler}>
+            <button className="btn-hover color-3" onClick={openPDF}>
               Resume &nbsp;
               <HiArrowNarrowRight
                 size={16}
