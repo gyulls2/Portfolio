@@ -35,7 +35,7 @@ const Project04 = () => {
           </div>
 
           <p>
-            2022/08/10 → 2022/08/17
+            2022.08.10 ~ 2022.08.17
             <br />
             팀 프로젝트 (3인)
             <br /> <br />
@@ -50,7 +50,7 @@ const Project04 = () => {
             </a>
             <br />
             <a
-              href="https://gyulls2.github.io/Portfolio/images/project.pdf"
+              href="https://drive.google.com/file/d/1r7GPjx6NKP8vGl49KSwRSIGrelVjTezy/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="underLine"

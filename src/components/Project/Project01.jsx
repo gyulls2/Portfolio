@@ -28,7 +28,7 @@ const Project01 = () => {
             />
           </a>
           <p>
-            2022/12/12 → 2023/01/13
+            2022.12.12 ~ 2023.01.13
             <br />
             팀 프로젝트 (7인)
             <br /> <br />
@@ -48,12 +48,12 @@ const Project01 = () => {
               rel="noopener noreferrer"
               className="underLine"
             >
-              Github&nbsp;
+              README&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
             <br />
             <a
-              href="https://gyulls2.github.io/Portfolio/images/project01.pdf"
+              href="https://drive.google.com/file/d/1m_E-xpUjOV4od21jx0LtCIhk6kLGYXBS/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="underLine"

@@ -110,7 +110,7 @@
         p {
           margin-bottom: 30px;
           font-size: 1rem;
-          line-height: 1.8rem;
+          line-height: 1.9rem;
 
           .timeLineTitle {
             display: inline-block;
@@ -121,6 +121,10 @@
 
           .blue {
             color: #407bff;
+          }
+
+          .bold {
+            font-weight: bold;
           }
         }
       }

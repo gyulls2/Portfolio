@@ -4,116 +4,123 @@
   background-color: var(--intro-background);
   color: var(--color);
 
-  h2 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    padding-top: 40px;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .introWrap {
+  .wrapper {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    // margin-top: 20px;
+    max-width: 1440px;
 
-    .introLeft {
-      width: 30%;
-      height: 100%;
+    .introWrap {
+      width: 100%;
+      padding: 50px 40px 20px 100px;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
-      margin-right: 30px;
 
-      .photo {
-        width: 80%;
-        min-width: 250px;
-        padding-top: 80px;
-      }
+      .introLeft {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        padding-right: 30px;
 
-      table {
-        font-size: 1rem;
-        margin-top: 20px;
+        h2 {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.5rem;
+        }
 
-        tr {
-          height: 30px;
+        .photo {
+          width: 80%;
+          min-width: 250px;
+          padding-top: 50px;
+        }
 
-          .td {
-            min-width: 100px;
-            width: 120px;
+        table {
+          font-size: 1rem;
+          margin-top: 20px;
+
+          tr {
+            height: 30px;
+
+            .td {
+              min-width: 100px;
+              width: 120px;
+            }
           }
         }
       }
-    }
 
-    .introRight {
-      width: 55%;
-      margin-top: 60px;
-      margin-bottom: 20px;
-
-      .timeLineTitle {
-        display: inline-block;
-        margin-top: -20px;
+      .introRight {
+        width: 70%;
+        margin-top: 60px;
         margin-bottom: 20px;
-        font-size: 1.3rem;
-        font-weight: bold;
-      }
 
-      .skills {
-        margin-bottom: 0;
-        line-height: 1.6rem;
-      }
-
-      p {
-        margin-bottom: 25px;
-        font-size: 0.85rem;
-        line-height: 1.4rem;
-
-        .bold {
+        .timeLineTitle {
+          display: inline-block;
+          margin-top: -20px;
+          margin-bottom: 20px;
+          font-size: 1.3rem;
           font-weight: bold;
         }
-        .normal {
-          font-weight: normal;
+
+        .skills {
+          margin-bottom: 0;
+          line-height: 1.6rem;
+        }
+
+        p {
+          margin-bottom: 25px;
           font-size: 0.85rem;
-        }
+          line-height: 1.4rem;
 
-        .contentsTitle {
-          display: inline-block;
-          font-weight: bold;
-          margin-bottom: 5px;
-          color: var(--color);
-          font-size: 0.95rem;
-        }
+          .bold {
+            font-weight: bold;
+          }
+          .normal {
+            font-weight: normal;
+            font-size: 0.85rem;
+          }
 
-        .contents {
-          font-weight: normal;
-          margin-top: 10px;
-          display: inline-block;
-          font-size: 0.9rem;
+          .contentsTitle {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--color);
+            font-size: 0.95rem;
+          }
+
+          .contents {
+            font-weight: normal;
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 0.9rem;
+          }
+
+          a:hover {
+            color: var(--btn);
+          }
         }
       }
     }
   }
 }
 
-@media all and (max-width: 768px) {
-  .introSection {
+@media all and (max-width: 870px) {
+  .introSection .wrapper {
     .introWrap {
       width: 100%;
       flex-flow: column wrap;
       align-items: center;
-      margin-top: 20px;
+      padding: 50px 0 20px 0;
 
       .introLeft {
         width: 100%;
         flex: 1;
         align-items: center;
+        justify-content: center;
 
         .photo {
           padding-top: 40px;
+          max-width: 400px;
         }
       }
 

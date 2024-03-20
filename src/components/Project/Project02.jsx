@@ -25,7 +25,7 @@ const Project02 = () => {
             <img src={proj02} alt="proj02" />
           </a>
           <p>
-            2022/11/14 → 2022/11/23
+            2022.11.14 ~ 2022.11.23
             <br />
             개인 프로젝트
             <br /> <br />
@@ -45,7 +45,7 @@ const Project02 = () => {
               rel="noopener noreferrer"
               className="underLine"
             >
-              Github&nbsp;
+              README&nbsp;
               <BiLink size={20} style={{ position: "relative", top: "5px" }} />
             </a>
             <br />

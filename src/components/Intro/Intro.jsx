@@ -1,21 +1,16 @@
 import React from "react";
 import "./Intro.scss";
 import TimeLine from "./TimeLine";
-import profile from "../../asset/img-profile.jpg"
+import profile from "../../asset/img-profile.jpg";
 
 const Intro = () => {
   return (
     <section className="introSection" id="intro">
       <div className="wrapper">
-        <h2>About Me</h2>
         <div className="introWrap">
           <div className="introLeft">
-            <img
-              // src="https://gyulls2.github.io/Portfolio/images/IMG_2227.jpg"
-              src={profile}
-              alt="파일없음"
-              className="photo"
-            />
+            <h2>ABOUT ME</h2>
+            <img src={profile} alt="프로필 이미지" className="photo" />
             <table>
               <tbody>
                 <tr>
@@ -32,7 +27,7 @@ const Intro = () => {
                 </tr>
                 <tr>
                   <td className="td">Address</td>
-                  <td>서울시 중랑구</td>
+                  <td>서울시 동대문구 신설동</td>
                 </tr>
               </tbody>
             </table>
