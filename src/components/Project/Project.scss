@@ -1,18 +1,18 @@
-#project {
-  background-color: var(--background-color);
+// #project {
+//   background-color: var(--background-color);
 
-  .wrapper {
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
+//   .wrapper {
+//     width: 100%;
+//     max-width: 1500px;
+//     margin: 0 auto;
 
-    .mySwiper {
-      .swiper-button-next {
-        margin-right: 15px;
-      }
-    }
-  }
-}
+//     .mySwiper {
+//       .swiper-button-next {
+//         margin-right: 15px;
+//       }
+//     }
+//   }
+// }
 
 .projectSection {
   width: 100%;
@@ -47,7 +47,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
-    padding-top: 70px;
+    padding-top: 30px;
   }
 
   h3 {

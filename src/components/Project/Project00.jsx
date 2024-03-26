@@ -12,6 +12,7 @@ import proj00 from "../../asset/proj00.png";
 const Project00 = () => {
   return (
     <section className="projectSection">
+      <h2 className="a11y-hidden">PROJECT</h2>
       <p className="title">PROJECT</p>
       <h3>SUBONE</h3>
 
@@ -101,7 +102,17 @@ const Project00 = () => {
               <TimelineContent>
                 <span className="timeLineTitle">프로젝트 소개</span>
                 <p>
-                SUBONE은 서울의 일상생활 속 교통과 커뮤니티를 연결하는 서비스입니다. 서울 지하철 1호선 이용자를 위해 <span className="blue">커뮤니티 기능을 통한 소통 및 편리한 지하철 택배 배송 서비스</span>를 제공합니다. 이 프로젝트에서 저는 디자인 리더로 활동하며 <span className="blue">Figma를 사용한 디자인 시스템 구축 및 UI/UX 디자인을 담당</span>했습니다. 또한 백앤드 API를 활용하여 <span className="blue">게시글 페이지를 개발</span>하였습니다.
+                  SUBONE은 서울의 일상생활 속 교통과 커뮤니티를 연결하는
+                  서비스입니다. 서울 지하철 1호선 이용자를 위해{" "}
+                  <span className="blue">
+                    커뮤니티 기능을 통한 소통 및 편리한 지하철 택배 배송 서비스
+                  </span>
+                  를 제공합니다. 이 프로젝트에서 저는 디자인 리더로 활동하며{" "}
+                  <span className="blue">
+                    Figma를 사용한 디자인 시스템 구축 및 UI/UX 디자인을 담당
+                  </span>
+                  했습니다. 또한 백앤드 API를 활용하여{" "}
+                  <span className="blue">게시글 페이지를 개발</span>하였습니다.
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -113,7 +124,8 @@ const Project00 = () => {
               <TimelineContent>
                 <span className="timeLineTitle">주요 기술</span>
                 <p>
-                React, React Query, Recoil, Axios, Vite, Styled-components, Figma, Github
+                  React, React Query, Recoil, Axios, Vite, Styled-components,
+                  Figma, Github
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -125,17 +137,23 @@ const Project00 = () => {
               <TimelineContent>
                 <span className="timeLineTitle">주요 기능</span>
                 <p className="last">
-                <span className="bold">CRUD 게시판:</span> RESTful API를 활용하여 사용자 인터랙션을 제공하는 CRUD 게시판 구현
+                  <span className="bold">CRUD 게시판:</span> RESTful API를
+                  활용하여 사용자 인터랙션을 제공하는 CRUD 게시판 구현
                   <br />
-                  <span className="bold">상태 관리:</span> React Query와 Recoil을 활용하여 효율적인 상태 관리 시스템 구축
+                  <span className="bold">상태 관리:</span> React Query와
+                  Recoil을 활용하여 효율적인 상태 관리 시스템 구축
                   <br />
-                  <span className="bold">지도 상의 게시글 표시:</span> 카카오 지도 API를 이용해 사용자들이 올린 게시글을 지도 위에 표시
+                  <span className="bold">지도 상의 게시글 표시:</span> 카카오
+                  지도 API를 이용해 사용자들이 올린 게시글을 지도 위에 표시
                   <br />
-                  <span className="bold">지하철 도착정보 검색:</span> 서울 지하철 API를 활용해 실시간 도착 정보 검색 기능 제공
+                  <span className="bold">지하철 도착정보 검색:</span> 서울
+                  지하철 API를 활용해 실시간 도착 정보 검색 기능 제공
                   <br />
-                  <span className="bold">공통 컴포넌트:</span> 커스텀 훅을 활용해 모달, 바텀시트, 무한 스크롤 등의 공통 UI 컴포넌트 구현
+                  <span className="bold">공통 컴포넌트:</span> 커스텀 훅을
+                  활용해 모달, 바텀시트, 무한 스크롤 등의 공통 UI 컴포넌트 구현
                   <br />
-                  <span className="bold">Form 데이터 관리:</span> react-hook-form을 사용하여 효율적으로 폼 데이터 관리
+                  <span className="bold">Form 데이터 관리:</span>{" "}
+                  react-hook-form을 사용하여 효율적으로 폼 데이터 관리
                 </p>
               </TimelineContent>
             </TimelineItem>
