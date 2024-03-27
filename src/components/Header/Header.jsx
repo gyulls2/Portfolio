@@ -1,11 +1,14 @@
 import React, {  useState } from "react";
 import "./Header.scss";
-import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsGithub } from "react-icons/bs";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { HiSun } from "react-icons/hi";
 import SideNav from "./SideNav";
+
+import "fullpage.js/vendors/scrolloverflow";
+import "fullpage.js";
+import "fullpage.js/dist/jquery.fullpage.min.css";
 
 const Header = ({ toggleDarkMode, darkMode }) => {
   // 사이드 메뉴 토글
@@ -17,32 +20,28 @@ const Header = ({ toggleDarkMode, darkMode }) => {
   return (
     <header className="header">
       <div className="logo">
-        <Link to="main" spy={true} smooth={true} className="logoText">
+        <a href="#mainpage" className="logoText">
           Portfolio
-        </Link>
+        </a>
       </div>
       <nav className="nav">
         <ul className="menuList">
           <li>
-            <Link
-              to="skill"
-              spy={true}
-              smooth={true}
+            <a
+              href="#skills"
               className="to-right-underline"
             >
               Skills
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link
-              to="project"
-              spy={true}
-              smooth={true}
+            <a
+              href="#proj00"
               className="to-right-underline"
             >
               Project
-            </Link>
+            </a>
           </li>
 
           <li>

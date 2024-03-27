@@ -17,7 +17,9 @@ import "fullpage.js";
 import "fullpage.js/dist/jquery.fullpage.min.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 870);
 
   const toggleDarkMode = () => {
@@ -32,6 +34,17 @@ function App() {
           scrollOverflowOptions: {
             scrollbars: false,
           },
+          anchors: [
+            "mainpage",
+            "intropage",
+            "skills",
+            "proj00",
+            "proj01",
+            "proj02",
+            "proj03",
+            "proj04",
+            "footer",
+          ],
         });
       }
     } else {
@@ -52,8 +65,8 @@ function App() {
     <div className={darkMode ? "App dark-mode" : "App"}>
       <div id="fullpage">
         <div className="section">
-          <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
           <Main />
+          <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         </div>
         <div className="section fp-scrollable">
           <Intro />

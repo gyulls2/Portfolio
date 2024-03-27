@@ -12,7 +12,7 @@ import proj00 from "../../asset/proj00.png";
 
 const Project00 = () => {
   return (
-    <section className="projectSection">
+    <section id="project00" className="projectSection">
       <h2 className="a11y-hidden">PROJECT</h2>
       <p className="title">PROJECT</p>
       <h3>SUBONE</h3>
