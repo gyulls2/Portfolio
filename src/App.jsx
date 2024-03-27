@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
@@ -18,19 +18,35 @@ import "fullpage.js/dist/jquery.fullpage.min.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 870);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  $(() => {
-    $("#fullpage").fullpage({
-      scrollOverflow: true,
-      scrollOverflowOptions: {
-        scrollbars: false,
-      },
-    });
-  });
+  useEffect(() => {
+    if (!isMobile) {
+      if (!window.fullpage_api) {
+        $("#fullpage").fullpage({
+          scrollOverflow: true,
+          scrollOverflowOptions: {
+            scrollbars: false,
+          },
+        });
+      }
+    } else {
+      // 모바일일 때 fullpage.js 해제
+      if (window.fullpage_api) {
+        window.fullpage_api.fullpage_api.setAutoScrolling(false);
+      }
+    }
+
+    return () => {
+      if (window.fullpage_api) {
+        window.fullpage_api.fullpage_api.setAutoScrolling(false);
+      }
+    };
+  }, []);
 
   return (
     <div className={darkMode ? "App dark-mode" : "App"}>
@@ -39,14 +55,30 @@ function App() {
           <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
           <Main />
         </div>
-        <div className="section fp-scrollable"><Intro /></div>
-        <div className="section fp-scrollable"><Skills /></div>
-        <div className="section fp-scrollable"><Project00 /></div>
-        <div className="section fp-scrollable"><Project01 /></div>
-        <div className="section fp-scrollable"><Project02 /></div>
-        <div className="section fp-scrollable"><Project03 /></div>
-        <div className="section fp-scrollable"><Project04 /></div>
-        <div className="section fp-auto-height"><Footer /></div>
+        <div className="section fp-scrollable">
+          <Intro />
+        </div>
+        <div className="section fp-scrollable">
+          <Skills />
+        </div>
+        <div className="section fp-scrollable">
+          <Project00 />
+        </div>
+        <div className="section fp-scrollable">
+          <Project01 />
+        </div>
+        <div className="section fp-scrollable">
+          <Project02 />
+        </div>
+        <div className="section fp-scrollable">
+          <Project03 />
+        </div>
+        <div className="section fp-scrollable">
+          <Project04 />
+        </div>
+        <div className="section fp-auto-height">
+          <Footer />
+        </div>
       </div>
     </div>
   );
