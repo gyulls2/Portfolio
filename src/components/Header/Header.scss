@@ -1,9 +1,20 @@
 .header {
-  width: 90%;
+  width: 100%;
+
   position: absolute;
-  padding-top: 20px;
-  top:0;
-  left: 5%;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header .wrapper{
+  // width: 100%;
+  // position: absolute;
+  padding: 20px 5%;
+  // top: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
   z-index: 100;
   display: flex;
   flex-flow: row wrap;
@@ -11,8 +22,8 @@
 
   .logo {
     width: 10%;
-    position: relative;
-    top: 20%;
+    height: 50px;
+    line-height: 50px;
     cursor: pointer;
 
     .logoText {
@@ -32,7 +43,6 @@
   .nav {
     width: 90%;
     height: 100%;
-    display: block;
     display: flex;
     justify-content: space-around;
 
@@ -40,7 +50,6 @@
       width: 80%;
       height: 50px;
       line-height: 50px;
-      // justify-content: space-around;
       display: flex;
       padding-left: 15%;
 
@@ -70,21 +79,17 @@
           opacity: 1;
         }
       }
-
-      .darkBtn {
-        transform: translateY(30%);
-      }
     }
 
     .iconList {
       height: 50px;
       line-height: 50px;
-      justify-content: space-around;
       display: flex;
+      justify-content: space-around;
 
       li {
-        width: 32px;
-        margin-left: 38px;
+        width: 70px;
+        padding-left: 38px;
       }
     }
   }
@@ -93,15 +98,15 @@
     display: none;
     font-size: 20px;
     position: absolute;
-    right: 15px;
-    top: 30px;
+    right: 30px;
+    top: 35px;
     color: var(--color);
     cursor: pointer;
   }
 }
 
 @media all and (max-width: 768px) {
-  .header {
+  .header .wrapper {
     padding-left: 30px;
 
     .progressbar {
