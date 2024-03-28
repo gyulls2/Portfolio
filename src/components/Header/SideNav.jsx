@@ -23,7 +23,7 @@ const SideNav = ({ isOpen, setIsOpen }) => {
   };
 
   return (
-    <div className="bg">
+    <div className={isOpen ? "bg_open bg" : "bg"}>
       <nav className={isOpen ? "open sideNav" : "sideNav"} ref={outside}>
         <button type="button" className="close" onClick={toggleSide}>
           <IoIosClose size={35} />
@@ -49,7 +49,7 @@ const SideNav = ({ isOpen, setIsOpen }) => {
           </li>
 
           <li>
-            <Link to="project" spy={true} smooth={true} onClick={toggleSide}>
+            <Link to="project00" spy={true} smooth={true} onClick={toggleSide}>
               Project
             </Link>
           </li>

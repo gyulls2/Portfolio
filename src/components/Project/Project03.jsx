@@ -1,4 +1,5 @@
 import React from "react";
+import "./Project.scss";
 import Timeline from "@mui/lab/Timeline";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";

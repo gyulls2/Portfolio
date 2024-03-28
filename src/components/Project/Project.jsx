@@ -12,11 +12,11 @@ const Project = () => {
     <div id="project">
       <div className="wrapper">
         <h2 className="a11y-hidden">PROJECT</h2>
-        <Project00 />
-        <Project01 />
-        <Project02 />
-        <Project03 />
-        <Project04 />
+        <div className="section fp-scrollable"><Project00 /></div>
+        <div className="section fp-scrollable"><Project01 /></div>
+        <div className="section fp-scrollable"><Project02 /></div>
+        <div className="section fp-scrollable"><Project03 /></div>
+        <div className="section fp-scrollable"><Project04 /></div>
       </div>
     </div>
   );

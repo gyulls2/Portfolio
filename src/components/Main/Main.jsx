@@ -63,8 +63,8 @@ const Main = () => {
                 style={{ position: "absolute", top: "16px" }}
               />
             </button>
-            <Link to="intro" spy={true} smooth={true}>
-              <button className="btn-hover color-3">
+            {/* <a href="#intropage">
+              <button className="btn-hover color-3 btn-intro">
                 About Me &nbsp;
                 <HiArrowNarrowRight
                   size={16}
@@ -73,7 +73,7 @@ const Main = () => {
                   color="white"
                 />
               </button>
-            </Link>
+            </a> */}
           </div>
         </div>
 
