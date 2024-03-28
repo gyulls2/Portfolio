@@ -84,3 +84,30 @@ button {
     padding: 0;
     position: absolute;
 }
+
+.App .quick-btn-top {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 16px rgba(0,0,0,.14);
+
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s all;
+  opacity: 0; 
+  visibility: hidden;
+
+  &.show-quick-btn {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all;
+  }
+}
