@@ -1,12 +1,11 @@
 .skillsSection {
   width: 100vw;
-  min-height: 100vh;
   color: var(--color);
   background-color: var(--background-color);
 
   .wrapper {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1600px;
     padding: 0 50px 50px 50px;
 
     .title {
@@ -39,8 +38,9 @@
           font-size: 0.9rem;
         }
       }
-      
-      .box::before, .box3::after {
+
+      .box::before,
+      .box3::after {
         content: "";
         width: 40px;
         height: 40px;
@@ -58,10 +58,11 @@
 
       .box3::after {
         position: absolute;
-        top:0;
+        top: 0;
         left: 50px;
 
-        background: url(../../asset/icon-sass.png) no-repeat center center / contain;
+        background: url(../../asset/icon-sass.png) no-repeat center center /
+          contain;
       }
 
       .box1::before {
@@ -106,6 +107,7 @@
       max-width: 1440px;
       height: 100%;
       margin: 0 auto;
+      padding: 0 0 50px 0;
 
       .container {
         width: 80%;

@@ -1,7 +1,6 @@
 import "./Main.scss";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { Link } from "react-scroll";
 
 import bg_pill from "../../asset/bg-pill-blue.svg";
 import bg_cube from "../../asset/bg-roundCube-orange.svg";

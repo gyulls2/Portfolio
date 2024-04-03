@@ -63,6 +63,7 @@ a {
 
 body {
   overflow-x: hidden;
+  background-color: var(--background-color);
 }
 
 button {
@@ -110,4 +111,13 @@ button {
     visibility: visible;
     transition: 0.5s all;
   }
+}
+
+/* fullpage 배경색 */
+.section {
+  background-color: var(--background-color);
+}
+
+.section.section-intro{
+  background-color: var(--intro-background);
 }

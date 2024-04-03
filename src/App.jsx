@@ -106,7 +106,7 @@ function App() {
           <Main />
           <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         </div>
-        <div className="section fp-scrollable">
+        <div className="section fp-scrollable section-intro">
           <Intro />
         </div>
         <div className="section fp-scrollable">
