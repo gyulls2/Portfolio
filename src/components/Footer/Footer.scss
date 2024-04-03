@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  min-height: 100px;
+  height: 100px;
   background-color: var(--footer-background);
   color: var(--footer);
   padding: 0 80px;
@@ -67,15 +67,15 @@
 
 @media all and (max-width: 768px) {
   .footer {
+    min-height: 100px;
     padding: 10px 20px 10px 10px;
 
     .footerWrapper {
-      flex-flow: column wrap;
+      flex-flow: column-reverse nowrap;
       align-items: flex-start;
       justify-content: center;
 
       .footerTitle {
-        order: 2;
         display: flex;
         flex-flow: column;
 
@@ -85,7 +85,6 @@
         }
       }
       .footerList {
-        order: 1;
         padding: 10px 0;
 
         ul {
