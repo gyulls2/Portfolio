@@ -156,9 +156,8 @@
   }
 }
 
-@media all and (max-width: 870px) {
+@media all and (max-width: 780px) {
   .mainSection {
-    min-height: 100vh;
     height: auto;
 
     .bg-roundCube-Orange-Glossy,
@@ -175,9 +174,7 @@
       border: none;
 
       .keyImage {
-        width: 100%;
-        min-height: 400px;
-        height: 50%;
+        display: none;
       }
 
       .keyText {

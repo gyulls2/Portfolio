@@ -9,12 +9,7 @@
 }
 
 .header .wrapper{
-  // width: 100%;
-  // position: absolute;
   padding: 20px 5%;
-  // top: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
   z-index: 100;
   display: flex;
   flex-flow: row wrap;
@@ -99,7 +94,7 @@
     font-size: 20px;
     position: absolute;
     right: 30px;
-    top: 35px;
+    top: 30px;
     color: var(--color);
     cursor: pointer;
   }
@@ -112,9 +107,17 @@
     .progressbar {
       display: none;
     }
-    .nav {
+    .nav .menuList,
+    .nav .iconList li:first-child {
       display: none;
     }
+
+    .nav .iconList li .toggle-button {
+      position: absolute;
+      top: 14px;
+      right: 68px;
+    }
+
     .navBtn {
       display: block;
     }

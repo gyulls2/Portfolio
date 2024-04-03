@@ -1,7 +1,9 @@
 .projectSection {
   width: 100%;
-  min-height: 100vh;
+  max-width: 1600px;
+  // min-height: 100vh;
   padding: 0 80px;
+  margin: 0 auto;
   background-color: var(--background-color);
   color: var(--color);
 
@@ -121,7 +123,6 @@
   .projectSection {
     width: 100%;
     padding: 0 40px;
-    // padding-top: 70px;
 
     .title {
       padding-top: 0;
@@ -144,8 +145,8 @@
       }
 
       .projectRight {
-        width: 115%;
-        padding: 40px 20px 0 0;
+        width: 120%;
+        padding: 50px 0 0;
         margin: 0 0 50px -30px;
       }
     }

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { BsGithub } from "react-icons/bs";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { HiSun } from "react-icons/hi";
+import { HiMenu } from "react-icons/hi";
 import SideNav from "./SideNav";
 
 const Header = ({ toggleDarkMode, darkMode }) => {
@@ -64,7 +64,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
               <button className="toggle-button" onClick={toggleDarkMode}>
                 {darkMode ? (
                   <BsMoonStarsFill
-                    size={26}
+                    size={24}
                     style={{ position: "relative", top: "15px" }}
                   />
                 ) : (
@@ -78,7 +78,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
           </ul>
         </nav>
         <button type="button" className="navBtn" onClick={toggleSide}>
-          <GiHamburgerMenu />
+          <HiMenu size={30}/>
         </button>
         <SideNav isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
