@@ -11,7 +11,7 @@ import img_key from "../../asset/img-key.png";
 const Main = () => {
   const openPDF = () => {
     const url =
-      "https://drive.google.com/file/d/1i1CARQe1AKIiY6g0bCbIG8PtLlYSbFyd/view?usp=sharing";
+      "https://drive.google.com/file/d/1-_8CI5nPmsNI9auqEuin-QmIHh5eESQE/view?usp=drive_link";
 
     window.open(url, "_blank");
   };
